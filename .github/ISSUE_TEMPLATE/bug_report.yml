@@ -1,0 +1,53 @@
+name: Bug Report
+description: Create a bug report to help us identify & solve issues.
+title: "Bug Report: "
+labels: ["bug", "triage"]
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: 📄 A description of the bug
+      description: Give us a rough description of the bug you encountered.
+      placeholder: Enter the description here.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: 📘 Steps to reproduce
+      description: Tell us what you did when you encountered the bug.
+      placeholder: Enter the reproduction steps here.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: 🙂 Expected behavior
+      description: Tell us what was supposed to happen when you encountered  the bug.
+      placeholder: Enter the expected behavior here.
+    validations:
+      required: true
+  - type: textarea
+    id: unexpected
+    attributes:
+      label: 😮 Unexpected behavior
+      description: Tell us what actually happened when you encountered the bug.
+      placeholder: Enter the unexpected behavior here.
+    validations:
+      required: true
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 📸 Screenshots
+      description: Attach screenshots of the bug, it helps a lot!
+      placeholder: Drag & Drop pictures here.
+    validations:
+      required: false
+  - type: textarea
+    id: pcinfo
+    attributes:
+      label: 💻 Computer Information
+      description: Tell us your computer specifications. This is not needed if you think that it's an application error.
+      placeholder: "Enter your computer info here, stuff like: your operating system, GPU Model, CPU Model, etc."
+    validations:
+      required: false
